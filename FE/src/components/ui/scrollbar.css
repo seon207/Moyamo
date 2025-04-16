@@ -1,0 +1,52 @@
+.customScrollbar {
+  overflow: auto;
+}
+.customScrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+}
+.customScrollbar::-webkit-scrollbar-track {
+  background-color: gainsboro;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+.customScrollbar.kr::-webkit-scrollbar-thumb {
+  background-color: #757eff;
+  border-radius: 10px;
+}
+.customScrollbar.dark-kr::-webkit-scrollbar-thumb {
+  background-color: #5151cf;
+  border-radius: 10px;
+}
+.customScrollbar.jp::-webkit-scrollbar-thumb {
+  background-color: #ffee4a;
+  border-radius: 10px;
+}
+
+.customScrollbar.us::-webkit-scrollbar-thumb {
+  background-color: #48bf87;
+  border-radius: 10px;
+}
+.customScrollbar.cn::-webkit-scrollbar-thumb {
+  background-color: #ff7237;
+  border-radius: 10px;
+}
+.customScrollbar.it::-webkit-scrollbar-thumb {
+  background-color: #b969cc;
+  border-radius: 10px;
+}
+
+.customScrollbar.blue::-webkit-scrollbar-thumb {
+  background-color: skyblue;
+  border-radius: 10px;
+}
+.customScrollbar.blue::-webkit-scrollbar-track {
+  background-color: azure;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}

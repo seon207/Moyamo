@@ -1,0 +1,334 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* 각 국가 메인 컬러는 main 주석 참고 */
+  /* korea color */
+  --color-kr-100: #dde4ff;
+  --color-kr-200: #c2cdff;
+  --color-kr-300: #9cabff;
+  --color-kr-400: #757eff;
+  --color-kr-500: #5352ff; /* main */
+  --color-kr-600: #4636f5;
+  --color-kr-700: #3c2ad8;
+  --color-kr-800: #3125ae;
+  --color-kr-900: #2c2689;
+
+  /* dark: korea color */
+  --color-d-kr-100: #e4eafb;
+  --color-d-kr-200: #ced8f7;
+  --color-d-kr-300: #b0bff1;
+  --color-d-kr-400: #909de9;
+  --color-d-kr-500: #757ddf;
+  --color-d-kr-600: #5151cf; /* main */
+  --color-d-kr-700: #4c4ab8;
+  --color-d-kr-800: #3e3e95;
+  --color-d-kr-900: #383977;
+
+  /* japan color */
+  --color-jp-100: #fffcc6;
+  --color-jp-200: #fff888;
+  --color-jp-300: #ffee4a;
+  --color-jp-400: #ffe020;
+  --color-jp-500: #f2bb06; /* main */
+  --color-jp-600: #dc9503;
+  --color-jp-700: #b76c06;
+  --color-jp-800: #94520c;
+  --color-jp-900: #7a440d;
+
+  /* dark: japan color */
+  --color-d-jp-100: #f9f0cc;
+  --color-d-jp-200: #f3e094;
+  --color-d-jp-300: #ebc853; /* main */
+  --color-d-jp-400: #e8b737;
+  --color-d-jp-500: #e09a20;
+  --color-d-jp-600: #c67719;
+  --color-d-jp-700: #a55618;
+  --color-d-jp-800: #86431a;
+  --color-d-jp-900: #857967;
+
+  /* u.s.a color */
+  --color-us-100: #d6f5e2;
+  --color-us-200: #b1e9c9;
+  --color-us-300: #7dd8aa;
+  --color-us-400: #48bf87;
+  --color-us-500: #25a46c;
+  --color-us-600: #1a9461; /* main */
+  --color-us-700: #136948;
+  --color-us-800: #11543a;
+  --color-us-900: #0f4531;
+
+  /* dark: u.s.a color */
+  --color-d-us-100: #dfece0;
+  --color-d-us-200: #c0dac4;
+  --color-d-us-300: #96bfa0;
+  --color-d-us-400: #699e78;
+  --color-d-us-500: #447954; /* main */
+  --color-d-us-600: #356645;
+  --color-d-us-700: #2b5138;
+  --color-d-us-800: #24412e;
+  --color-d-us-900: #1e3627;
+
+  /* china color */
+  --color-cn-100: #ffe6d4;
+  --color-cn-200: #ffcaa8;
+  --color-cn-300: #ffa470;
+  --color-cn-400: #ff7237;
+  --color-cn-500: #ff5b23; /* main */
+  --color-cn-600: #f03206;
+  --color-cn-700: #c72107;
+  --color-cn-800: #9e1c0e;
+  --color-cn-900: #7f1b0f;
+
+  /* dark: china color */
+  --color-d-cn-100: #fbe6d9;
+  --color-d-cn-200: #f6c9b2;
+  --color-d-cn-300: #f0a581;
+  --color-d-cn-400: #eb8763; /* main */
+  --color-d-cn-500: #e3552c;
+  --color-d-cn-600: #d43e22;
+  --color-d-cn-700: #b02d1e;
+  --color-d-cn-800: #8d271f;
+  --color-d-cn-900: #72221c;
+  --color-d-cn-950: #3d0e0d;
+
+  /* italy color */
+  --color-italy-100: #f6edfa;
+  --color-italy-200: #eddaf4;
+  --color-italy-300: #e1bceb;
+  --color-italy-400: #d094de;
+  --color-italy-500: #b969cc;
+  --color-italy-600: #a95ab9; /* main */
+  --color-italy-700: #843b90;
+  --color-italy-800: #6d3276;
+  --color-italy-900: #5c2d62;
+
+  /* dark: italy color */
+  --color-d-italy-100: #f6eef9;
+  --color-d-italy-200: #eddbf3;
+  --color-d-italy-300: #e0bfe8;
+  --color-d-italy-400: #cd98da;
+  --color-d-italy-500: #b66fc6;
+  --color-d-italy-600: #8d499b; /* main */
+  --color-d-italy-700: #803f8c;
+  --color-d-italy-800: #6a3573;
+  --color-d-italy-900: #59305f;
+
+  /* light green */
+  --color-inch-worm-100: #f7ffc5;
+  --color-inch-worm-200: #edff92;
+  --color-inch-worm-300: #ddff53;
+  --color-inch-worm-400: #c9fb20;
+  --color-inch-worm-450: #bdde58; /* dark */
+  --color-inch-worm-500: #aee600; /* main */
+  --color-inch-worm-600: #84b500;
+  --color-inch-worm-700: #648902;
+  --color-inch-worm-800: #4f6c08;
+
+  /* gren(O,X) */
+  --color-fern-100: #e4f4e4;
+  --color-fern-200: #cae8ca;
+  --color-fern-300: #a2d4a1;
+  --color-fern-400: #62b162; /* main */
+  --color-fern-500: #4c9b4c;
+  --color-fern-600: #3a7f3b;
+  --color-fern-700: #306531;
+
+  /* pink */
+  --color-lavender-rose-50: #fef1f9;
+  --color-lavender-rose-100: #fde6f5;
+  --color-lavender-rose-200: #feccec;
+  --color-lavender-rose-250: #d983b8; /* dark */
+  --color-lavender-rose-300: #fe91d4; /* main */
+  --color-lavender-rose-400: #fc6ac0;
+  --color-lavender-rose-500: #f63ea6;
+  --color-lavender-rose-600: #e61c84;
+  --color-lavender-rose-700: #c90d68;
+
+  /* dark mode */
+  --color-d-txt-50: #eaeaea;
+
+  /* quiz mode */
+  --color-correct-300: #00b60f;
+  --color-wrong-300: #ff4736;
+  --color-unselected-300: #ffffff;
+
+  /* drop shadow */
+  --drop-shadow-basic: 0 2px 2px rgba(0, 0, 0, 0.25);
+  --drop-shadow-nation: 0 1px 1px rgba(0, 0, 0, 0.4);
+  --drop-shadow-quiz: 5px 5px 1px rgba(255, 255, 255, 0.7);
+  --drop-shadow-quiz-box: 5px 5px 1px rgba(0, 0, 0, 0.1);
+
+  /* 토스트 관련 스타일 */
+  --toast-width: 400px; /* 기본값보다 더 넓게 */
+  --toast-height: auto; /* 높이는 컨텐츠에 맞게 */
+  --toast-border-radius: 0.5rem;
+  --toast-padding: 1rem; /* 패딩 증가 */
+  --toast-font-size: 1rem; /* 폰트 크기 증가 */
+}
+
+/* 폰트 */
+/* 던파 비트비트체 2 */
+@font-face {
+  font-family: 'DNFBitBitv2';
+  src:
+    url('/fonts/DNFBitBitv2.woff2') format('woff2'),
+    url('/fonts/DNFBitBitv2.woff') format('woff'),
+    url('/fonts/DNFBitBitv2.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* noto sans */
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+
+/* 에러페이지용 */
+@font-face {
+  font-family: 'Paperlogy-8ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* 나눔스퀘어라운드 */
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-display: swap;
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.eot);
+  src:
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.woff2)
+      format('woff2'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.woff)
+      format('woff'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.eot?#iefix)
+      format('embedded-opentype'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.ttf)
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquareRoundB';
+  font-display: swap;
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.eot);
+  src:
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.woff2)
+      format('woff2'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.woff)
+      format('woff'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.eot?#iefix)
+      format('embedded-opentype'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.ttf)
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquareRoundEB';
+  font-display: swap;
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.eot);
+  src:
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.woff2)
+      format('woff2'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.woff)
+      format('woff'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.eot?#iefix)
+      format('embedded-opentype'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.ttf)
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquareRoundL';
+  font-display: swap;
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.eot);
+  src:
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff2)
+      format('woff2'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff)
+      format('woff'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.eot?#iefix)
+      format('embedded-opentype'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.ttf)
+      format('truetype');
+}
+
+/* 갈무리11 */
+@font-face {
+  font-family: 'Galmuri11';
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/Galmuri11.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/Galmuri11.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/Galmuri11.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* :root {
+  --sidebar: hsl(0 0% 98%);
+  --sidebar-foreground: hsl(240 5.3% 26.1%);
+  --sidebar-primary: hsl(240 5.9% 10%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(240 4.8% 95.9%);
+  --sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --sidebar-border: hsl(220 13% 91%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+.dark {
+  --sidebar: hsl(240 5.9% 10%);
+  --sidebar-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-primary: hsl(224.3 76.3% 48%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(240 3.7% 15.9%);
+  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-border: hsl(240 3.7% 15.9%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+@theme inline {
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
