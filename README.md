@@ -1,5 +1,5 @@
 # ✌️MoyaMo 모야모
-![Group_218](/uploads/fe6799fcdca7268bd864a1aa54ac6341/Group_218.png)
+![image](https://github.com/user-attachments/assets/097c409e-23e3-4c30-96d9-a4ba6e3d3fb3)
 
 ## 📑 목차
 - [프로젝트 소개](#-프로젝트-소개)
@@ -31,36 +31,33 @@
 
 ## 💻 화면
 ### 1. 메인화면
-![홈화면](/uploads/4df8297fe04c3fcf54b7a552635142a9/홈화면.png)
+![image](https://github.com/user-attachments/assets/cb1d14a3-6543-4614-9b71-8540daf08326)
 
 ### 2. 제스처 검색
 **키워드 검색**
-![키워드검색](/uploads/3f0d807288472d5d022578de380dd57f/image.png)
+![image](https://github.com/user-attachments/assets/76bcf58f-6be2-406c-a2c2-4619235dfd96)
 
 **제스처 검색**
-![제스처검색](/uploads/e253b2e595784a9088cd204d9b88fa06/image.png)
+![image](https://github.com/user-attachments/assets/939431be-d697-4af1-aa2d-2ef44f6025e0)
 
 ### 3-1. 제스처 사전
 **디테일**
-![디테일3](/uploads/41e0387a28c956ed0de5182c296ac76a/디테일3.png)
+![image](https://github.com/user-attachments/assets/d46e456d-73d3-4699-8fc6-fcf01d95760d)
 
 **비교가이드**
-![비교가이드3](/uploads/5ac52dc6aaf93cf5f65d76b364e9b01b/비교가이드3.png)
+![image](https://github.com/user-attachments/assets/add488af-cc4c-41e4-8bb9-3adb59f95297)
 
 ### 3-2. AI 연습
-![연습3__1_](/uploads/9c43e5b5fe74144be0331cac0479ece4/연습3__1_.gif)
+![AI연습](https://github.com/user-attachments/assets/923ab1d8-61ae-4577-b614-efcb74619e96)
 
 ### 4-1. 의미 맞추기 퀴즈 
-![의미맞추기퀴즈](/uploads/b4fd7e3c60b2d85eefbc299e6ae06932/의미맞추기퀴즈.gif)
+![의미맞추기퀴즈](https://github.com/user-attachments/assets/06120281-dfab-4850-8958-e57de1652e91)
 
 ### 4-2. 제스처 맞추기 퀴즈 
-![제스처맞추기퀴즈](/uploads/18c9590167f19d8af849fb4c65c957fc/제스처맞추기퀴즈.gif)
-
+![제스처맞추기퀴즈](https://github.com/user-attachments/assets/cb30fb5e-b63a-4eaa-8029-b9808a1e8024)
 
 ### 4-3. AI 인식 퀴즈
-![ai퀴즈](/uploads/3dd5f1a0d317c0f9f44344793b02c215/ai퀴즈.gif)
-
-
+![ai퀴즈](https://github.com/user-attachments/assets/5a5f8372-4155-46e3-a674-4d9e7de8baf9)
 
 
 
@@ -180,7 +177,8 @@
 ```
 
 ### 📚 ERD
-![image](/uploads/2b4e562662dd91b9f08e8858166d9623/image.png){width=966 height=423}
+![image](https://github.com/user-attachments/assets/a9bd0d92-0c9c-455e-ac2a-dd3e5cee6fa3)
+
 
 ### ⚙️ 설치 및 실행 방법
 ```bash
